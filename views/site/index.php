@@ -3,9 +3,14 @@
 /* @var $this yii\web\View */
 use app\components\FirstWidgets;
 use app\components\SecondWidget;
+use app\components\ClockWidget;
+use app\components\VoteWidget;
+use app\components\saidbakr\JuiThemeSelectWidget;
 use yii\bootstrap\Modal;
 use yii\jui\DatePicker;
 $this->title = 'My Yii Application';
+
+$fakedModel = (object)['title'=> 'A Product', 'image' => 'http://placehold.it/350x150'];
 ?>
 <div class="site-index">
 
@@ -34,7 +39,7 @@ $this->title = 'My Yii Application';
           'size' => 'modal-lg',
           'toggleButton' => ['label' => 'Upload File'],
       ]);
-      echo "<div id='modal-content'></div>";
+      echo app\components\UploadWidget::widget();
       Modal::end();
 
         ?>
@@ -48,7 +53,14 @@ $this->title = 'My Yii Application';
 ]);
         ?>
 
+          <?= app\components\ClockWidget::widget(); ?>
 
+
+          <?= VoteWidget::widget(['model' => $fakedModel]) ?>
+
+          <!-- < app\components\UploadWidget::widget(); ?> -->
+
+          <!-- < JuiThemeSelectWidget::widget() ;?> -->
     </div>
 
     <!-- <div class="body-content">

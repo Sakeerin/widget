@@ -2,4 +2,4 @@
 
 
 ?>
-<p style="color: ##FF0033"><?= $content ?></p></p>
+<p style="color: #FF0033"><?= $content ?></p></p>
