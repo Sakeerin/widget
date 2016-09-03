@@ -37,7 +37,6 @@ $(function(){
 
   function updateCoords(c)
   {
-    //var c = {"w":100,"h":100};
     $('#x').val(c.x);
     $('#y').val(c.y);
     $('#w').val(c.w);
