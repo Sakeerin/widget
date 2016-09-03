@@ -6,11 +6,11 @@ UploadAsset::register($this);
 
 <?php
  ?>
- <?php $this->beginBody() ?>
+ <!-- < $this->beginBody() ?> -->
  <p >
    <img src="upload_pic/13.jpg" id="target" />
  </p>
- <?php $this->endBody() ?>
+ <!-- < $this->endBody() ?> -->
 
  <!-- <p id="target">
    <b style="display:block; padding: .5em 1em;">

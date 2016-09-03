@@ -4,8 +4,8 @@
   namespace app\components\upload;
 
   use yii\base\Widget;
-  use app\assets\UploadAsset;
-  
+  //use app\assets\UploadAsset;
+
 
   /**
    *
